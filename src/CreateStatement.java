@@ -8,8 +8,8 @@ public class CreateStatement {
         Statement stt = null;
         try {
             String url = "jdbc:mysql://localhost:3306/";
-            String user = "root";
-            String password = "";
+            String user = "****";
+            String password = "****";
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection con = DriverManager.getConnection(url, user, password);
             stt = con.createStatement();
