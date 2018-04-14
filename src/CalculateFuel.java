@@ -524,14 +524,10 @@ public class CalculateFuel {
         System.out.println();
         System.out.println("THIS IS JUST 15 MINUTES IN MUMBAI, THINK OF THE SAVINGS IF FLEX-TRACKS IS OPERATING AT EVERY AIRPORT ALL THE TIME!!!!!");
 
-        String url = "jdbc:mysql://localhost:3306/";
-        String user = "root";
-        String password = "";
 
         try{
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = DriverManager.getConnection(url, user, password);
-            Statement stt = con.createStatement();
+            CreateStatement createStatement = new CreateStatement();
+            Statement stt = createStatement.getStatement();
             stt.execute("USE flextracks");
 
             stt.execute("UPDATE displayfuelconsumption set runway = '"+fixedRunwayName+"' WHERE id = '1'");
