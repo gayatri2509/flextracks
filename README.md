@@ -8,4 +8,4 @@ It uses a combination of greedy and dynamic programming methodologies for optimi
 
 Technologies used: Java, JavaFx, MySQL database
 
-The output of this project displays a schedule showing flight details along with the allotted runway. The schedule updates after every slot of 10 minutes. This dynamic allocation of flights leads to massive fuel savings and reduces the ATC workload.
+The output of this project displays a schedule showing flight details along with the allotted runway. The schedule updates after every slot of 10 minutes. It also shows the amount of fuel saved. The database is used to store the information related to aircrafts, wind speeds, flight details, runway orientation, etc. Dynamic allocation of flights leads to massive fuel savings and reduces the ATC workload. This system can be incorporated to serve the needs of different airports by changing the configuration according to the airport structure.
